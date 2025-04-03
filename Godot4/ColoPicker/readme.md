@@ -102,9 +102,9 @@ Please ensure your code follows Godot’s GDScript style guidelines and includes
 
 If you encounter any issues, please help us improve by reporting them:
 
-1. **Check Existing Issues**: Search the [Issues](https://github.com/yourusername/godot-custom-color-picker/issues) tab to see if the bug has already been reported.
+1. **Check Existing Issues**: Search the [Issues](https://github.com/Unique-Digital-Resources/my-cusom-ui-controls-for-godot/issues) tab to see if the bug has already been reported.
 2. **File a New Issue**:
-   - Go to the [Issues](https://github.com/yourusername/godot-custom-color-picker/issues) tab.
+   - Go to the [Issues](https://github.com/Unique-Digital-Resources/my-cusom-ui-controls-for-godot/issues) tab.
    - Click "New Issue" and select "Bug Report" (if available, or use the default template).
    - Provide a clear title (e.g., "Hex Input Fails with Lowercase Values").
    - Include:
