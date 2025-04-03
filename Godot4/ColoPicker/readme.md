@@ -124,3 +124,6 @@ This project part is licensed under the MIT License.
 
 - **Author**: Abdo Mahmoud
 - **Built with**: Godot 4.3
+
+## Patreon
+[Support me on Patreon](https://patreon.com/user?u=101292544)
