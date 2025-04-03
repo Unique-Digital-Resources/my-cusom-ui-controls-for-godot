@@ -1,6 +1,6 @@
 # Custom Color Picker
 
-A highly customizable and feature-rich color picker built for Godot 4.3, designed to enhance color selection workflows in game development. This tool offers multiple shape modes (square, triangle, circle), an eyedropper, color plates for saving presets, and full RGBA support via hex input.
+A feature-rich color picker built for Godot 4.3, designed to enhance color selection workflows in game and app development. This tool offers multiple shape modes (square, triangle, circle), an eyedropper, color plates for saving presets, and full RGBA support via hex input.
 
 It’s mostly ready to use, though it’s not fully tested and might need a little effort to integrate into your projects.
 
