@@ -4,8 +4,8 @@ A highly customizable and feature-rich color picker built for Godot 4.3, designe
 
 It’s mostly ready to use, though it’s not fully tested and might need a little effort to integrate into your projects.
 
-![Color Picker Preview](screenshot.png)
-![Showcase Video](https://youtu.be/c6Adz4VlqQE?feature=shared)
+![Color Picker Screenshot](Screenshot.png)
+[Showcase Video](https://youtu.be/c6Adz4VlqQE?feature=shared)
 ## Features
 
 - **Multiple Shape Modes**:
