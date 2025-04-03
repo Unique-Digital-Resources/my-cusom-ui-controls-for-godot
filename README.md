@@ -46,4 +46,4 @@ This project part is licensed under the MIT License.
 - **Built with**: Godot
 
 ## Patreon
-[Support me on Patreon](patreon.com/user?u=101292544)
+[Support me on Patreon](https://patreon.com/user?u=101292544)
