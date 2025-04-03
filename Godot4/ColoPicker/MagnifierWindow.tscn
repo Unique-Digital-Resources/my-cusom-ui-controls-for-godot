@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://c2enuorp2dfhf"]
+
+[ext_resource type="Script" path="res://ColoPicker/MagnifierWindow.gd" id="1_q3kl5"]
+
+[node name="Window" type="Window"]
+transparent_bg = true
+mode = 3
+title = "Magnify"
+transient = true
+unresizable = true
+borderless = true
+always_on_top = true
+transparent = true
+script = ExtResource("1_q3kl5")
