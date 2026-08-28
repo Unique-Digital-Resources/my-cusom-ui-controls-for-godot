@@ -1,0 +1,61 @@
+[gd_scene load_steps=2 format=3 uid="uid://c8y3x8x7y9z1"]
+
+[ext_resource type="Script" path="res://addons/scene_exporter/ui/settings_dialog.gd" id="1_settings_dialog"]
+
+[node name="SettingsDialog" type="ConfirmationDialog"]
+title = "Export Settings"
+initial_position = 2
+size = Vector2i(400, 220)
+visible = false
+script = ExtResource("1_settings_dialog")
+
+[node name="VBox" type="VBoxContainer" parent="."]
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 392.0
+offset_bottom = 152.0
+
+[node name="Grid" type="GridContainer" parent="VBox"]
+layout_mode = 2
+columns = 2
+
+[node name="PathLabel" type="Label" parent="VBox/Grid"]
+layout_mode = 2
+text = "Output Path"
+
+[node name="PathEdit" type="LineEdit" parent="VBox/Grid"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "res://export.svg"
+
+[node name="EmbedImagesLabel" type="Label" parent="VBox/Grid"]
+layout_mode = 2
+text = "Embed Images"
+
+[node name="EmbedImagesCheck" type="CheckBox" parent="VBox/Grid"]
+layout_mode = 2
+button_pressed = true
+
+[node name="EmbedFontsLabel" type="Label" parent="VBox/Grid"]
+layout_mode = 2
+text = "Embed Fonts"
+
+[node name="EmbedFontsCheck" type="CheckBox" parent="VBox/Grid"]
+layout_mode = 2
+button_pressed = true
+
+[node name="PrettyPrintLabel" type="Label" parent="VBox/Grid"]
+layout_mode = 2
+text = "Pretty Print XML"
+
+[node name="PrettyPrintCheck" type="CheckBox" parent="VBox/Grid"]
+layout_mode = 2
+button_pressed = true
+
+[node name="IgnoreHiddenLabel" type="Label" parent="VBox/Grid"]
+layout_mode = 2
+text = "Ignore Hidden Nodes"
+
+[node name="IgnoreHiddenCheck" type="CheckBox" parent="VBox/Grid"]
+layout_mode = 2
+button_pressed = true
