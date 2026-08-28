@@ -1,0 +1,7 @@
+- code editor has bar of vertical icon tab buttons and code text box beside it contained in hsplit, but bar of vertical tabs should be fixed, while code area expanded, so make parent of them hbox instead
+- make auto valid for format codes instead manual click"validate" button
+- every time we need to delete _generated_scripts after and diattach generated code each update..instead, let it replace old generated code if exist, if any of folder or code missing, generate them
+- doesnt godot nodes' have id nativly?
+- after applying new nodes created, but we want instead to change them entirely just how is with html layout
+- we want to make live update when any prop of nodes changed to a non-default value
+- when select any node, its non-default valued props will displayed in EditorDock, so..the editor dock will display the tree in general and props of selected node and its children

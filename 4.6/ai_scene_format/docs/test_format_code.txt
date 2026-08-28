@@ -1,0 +1,658 @@
+Control Root #n_1
+	layout_mode = 3
+	anchors_preset = 15
+	anchor_right = 1.0
+	anchor_bottom = 1.0
+	
+	HBoxContainer MainSplit #n_2
+		layout_mode = 1
+		anchors_preset = 15
+		theme_override_constants/separation = 0
+		
+		PanelContainer VisualSide #n_3
+			layout_mode = 2
+			size_flags_horizontal = 3
+			size_flags_stretch_ratio = 45.0
+			theme_override_styles/panel StyleBoxFlat #r_vis_bg
+				bg_color = Color(0.172, 0.243, 0.313, 1.0)
+				
+			MarginContainer VisualMargins #n_4
+				layout_mode = 1
+				anchors_preset = 15
+				theme_override_constants/margin_left = 20
+				theme_override_constants/margin_right = 20
+				theme_override_constants/margin_top = 40
+				theme_override_constants/margin_bottom = 40
+				
+				VBoxContainer VisualContent #n_5
+					layout_mode = 2
+					size_flags_vertical = 3
+					alignment = 1
+					theme_override_constants/separation = 20
+					
+					GridContainer BooksGrid #n_6
+						layout_mode = 2
+						size_flags_horizontal = 4
+						columns = 3
+						theme_override_constants/h_separation = 15
+						theme_override_constants/v_separation = 15
+						
+						PanelContainer BookGroup1 #n_7
+							layout_mode = 2
+							size_flags_horizontal = 3
+							size_flags_vertical = 3
+							theme_override_styles/panel StyleBoxFlat #r_group_1
+								bg_color = Color(1.0, 1.0, 1.0, 0.1)
+								corner_radius_top_left = 10
+								corner_radius_top_right = 10
+								corner_radius_bottom_right = 10
+								corner_radius_bottom_left = 10
+								content_margin_left = 10
+								content_margin_right = 10
+								content_margin_top = 10
+								content_margin_bottom = 10
+								
+							VBoxContainer GroupContent1 #n_8
+								layout_mode = 2
+								alignment = 1
+								theme_override_constants/separation = 5
+								
+								HBoxContainer BooksRow1 #n_9
+									layout_mode = 2
+									alignment = 1
+									theme_override_constants/separation = 4
+									
+									Panel Book1 #n_10
+										layout_mode = 2
+										size_flags_horizontal = 0
+										custom_minimum_size = Vector2(25.0, 35.0)
+										theme_override_styles/panel StyleBoxFlat #r_book_1
+											bg_color = Color(0.901, 0.494, 0.133, 1.0)
+											corner_radius_top_left = 2
+											corner_radius_top_right = 2
+											corner_radius_bottom_right = 2
+											corner_radius_bottom_left = 2
+											shadow_size = 2
+											shadow_color = Color(0.827, 0.329, 0.0, 1.0)
+											shadow_offset = Vector2(2.0, 2.0)
+											
+									Panel Book2 #n_11
+										layout_mode = 2
+										size_flags_horizontal = 0
+										custom_minimum_size = Vector2(25.0, 35.0)
+										theme_override_styles/panel StyleBoxFlat #r_book_2
+											bg_color = Color(0.901, 0.494, 0.133, 1.0)
+											corner_radius_top_left = 2
+											corner_radius_top_right = 2
+											corner_radius_bottom_right = 2
+											corner_radius_bottom_left = 2
+											shadow_size = 2
+											shadow_color = Color(0.827, 0.329, 0.0, 1.0)
+											shadow_offset = Vector2(2.0, 2.0)
+											
+									Panel Book3 #n_12
+										layout_mode = 2
+										size_flags_horizontal = 0
+										custom_minimum_size = Vector2(25.0, 35.0)
+										theme_override_styles/panel StyleBoxFlat #r_book_3
+											bg_color = Color(0.901, 0.494, 0.133, 1.0)
+											corner_radius_top_left = 2
+											corner_radius_top_right = 2
+											corner_radius_bottom_right = 2
+											corner_radius_bottom_left = 2
+											shadow_size = 2
+											shadow_color = Color(0.827, 0.329, 0.0, 1.0)
+											shadow_offset = Vector2(2.0, 2.0)
+											
+								Label PriceTag1 #n_13
+									layout_mode = 2
+									text = "96 ج"
+									horizontal_alignment = 1
+									theme_override_colors/font_color = Color(1.0, 1.0, 1.0, 1.0)
+									theme_override_font_sizes/font_size = 13
+
+						PanelContainer BookGroup2 #n_14
+							layout_mode = 2
+							size_flags_horizontal = 3
+							size_flags_vertical = 3
+							theme_override_styles/panel StyleBoxFlat #r_group_2
+								bg_color = Color(1.0, 1.0, 1.0, 0.1)
+								corner_radius_top_left = 10
+								corner_radius_top_right = 10
+								corner_radius_bottom_right = 10
+								corner_radius_bottom_left = 10
+								content_margin_left = 10
+								content_margin_right = 10
+								content_margin_top = 10
+								content_margin_bottom = 10
+								
+							VBoxContainer GroupContent2 #n_15
+								layout_mode = 2
+								alignment = 1
+								theme_override_constants/separation = 5
+								
+								HBoxContainer BooksRow2 #n_16
+									layout_mode = 2
+									alignment = 1
+									theme_override_constants/separation = 4
+									
+									Panel Book4 #n_17
+										layout_mode = 2
+										size_flags_horizontal = 0
+										custom_minimum_size = Vector2(25.0, 35.0)
+										theme_override_styles/panel StyleBoxFlat #r_book_4
+											bg_color = Color(0.901, 0.494, 0.133, 1.0)
+											corner_radius_top_left = 2
+											corner_radius_top_right = 2
+											corner_radius_bottom_right = 2
+											corner_radius_bottom_left = 2
+											shadow_size = 2
+											shadow_color = Color(0.827, 0.329, 0.0, 1.0)
+											shadow_offset = Vector2(2.0, 2.0)
+											
+									Panel Book5 #n_18
+										layout_mode = 2
+										size_flags_horizontal = 0
+										custom_minimum_size = Vector2(25.0, 35.0)
+										theme_override_styles/panel StyleBoxFlat #r_book_5
+											bg_color = Color(0.901, 0.494, 0.133, 1.0)
+											corner_radius_top_left = 2
+											corner_radius_top_right = 2
+											corner_radius_bottom_right = 2
+											corner_radius_bottom_left = 2
+											shadow_size = 2
+											shadow_color = Color(0.827, 0.329, 0.0, 1.0)
+											shadow_offset = Vector2(2.0, 2.0)
+											
+									Panel Book6 #n_19
+										layout_mode = 2
+										size_flags_horizontal = 0
+										custom_minimum_size = Vector2(25.0, 35.0)
+										theme_override_styles/panel StyleBoxFlat #r_book_6
+											bg_color = Color(0.901, 0.494, 0.133, 1.0)
+											corner_radius_top_left = 2
+											corner_radius_top_right = 2
+											corner_radius_bottom_right = 2
+											corner_radius_bottom_left = 2
+											shadow_size = 2
+											shadow_color = Color(0.827, 0.329, 0.0, 1.0)
+											shadow_offset = Vector2(2.0, 2.0)
+											
+								Label PriceTag2 #n_20
+									layout_mode = 2
+									text = "96 ج"
+									horizontal_alignment = 1
+									theme_override_colors/font_color = Color(1.0, 1.0, 1.0, 1.0)
+									theme_override_font_sizes/font_size = 13
+
+						PanelContainer BookGroup3 #n_21
+							layout_mode = 2
+							size_flags_horizontal = 3
+							size_flags_vertical = 3
+							theme_override_styles/panel StyleBoxFlat #r_group_3
+								bg_color = Color(1.0, 1.0, 1.0, 0.1)
+								corner_radius_top_left = 10
+								corner_radius_top_right = 10
+								corner_radius_bottom_right = 10
+								corner_radius_bottom_left = 10
+								content_margin_left = 10
+								content_margin_right = 10
+								content_margin_top = 10
+								content_margin_bottom = 10
+								
+							VBoxContainer GroupContent3 #n_22
+								layout_mode = 2
+								alignment = 1
+								theme_override_constants/separation = 5
+								
+								HBoxContainer BooksRow3 #n_23
+									layout_mode = 2
+									alignment = 1
+									theme_override_constants/separation = 4
+									
+									Panel Book7 #n_24
+										layout_mode = 2
+										size_flags_horizontal = 0
+										custom_minimum_size = Vector2(25.0, 35.0)
+										theme_override_styles/panel StyleBoxFlat #r_book_7
+											bg_color = Color(0.901, 0.494, 0.133, 1.0)
+											corner_radius_top_left = 2
+											corner_radius_top_right = 2
+											corner_radius_bottom_right = 2
+											corner_radius_bottom_left = 2
+											shadow_size = 2
+											shadow_color = Color(0.827, 0.329, 0.0, 1.0)
+											shadow_offset = Vector2(2.0, 2.0)
+											
+									Panel Book8 #n_25
+										layout_mode = 2
+										size_flags_horizontal = 0
+										custom_minimum_size = Vector2(25.0, 35.0)
+										theme_override_styles/panel StyleBoxFlat #r_book_8
+											bg_color = Color(0.901, 0.494, 0.133, 1.0)
+											corner_radius_top_left = 2
+											corner_radius_top_right = 2
+											corner_radius_bottom_right = 2
+											corner_radius_bottom_left = 2
+											shadow_size = 2
+											shadow_color = Color(0.827, 0.329, 0.0, 1.0)
+											shadow_offset = Vector2(2.0, 2.0)
+											
+									Panel Book9 #n_26
+										layout_mode = 2
+										size_flags_horizontal = 0
+										custom_minimum_size = Vector2(25.0, 35.0)
+										theme_override_styles/panel StyleBoxFlat #r_book_9
+											bg_color = Color(0.901, 0.494, 0.133, 1.0)
+											corner_radius_top_left = 2
+											corner_radius_top_right = 2
+											corner_radius_bottom_right = 2
+											corner_radius_bottom_left = 2
+											shadow_size = 2
+											shadow_color = Color(0.827, 0.329, 0.0, 1.0)
+											shadow_offset = Vector2(2.0, 2.0)
+											
+								Label PriceTag3 #n_27
+									layout_mode = 2
+									text = "96 ج"
+									horizontal_alignment = 1
+									theme_override_colors/font_color = Color(1.0, 1.0, 1.0, 1.0)
+									theme_override_font_sizes/font_size = 13
+
+						PanelContainer BookGroup4 #n_28
+							layout_mode = 2
+							size_flags_horizontal = 3
+							size_flags_vertical = 3
+							theme_override_styles/panel StyleBoxFlat #r_group_4
+								bg_color = Color(1.0, 1.0, 1.0, 0.1)
+								corner_radius_top_left = 10
+								corner_radius_top_right = 10
+								corner_radius_bottom_right = 10
+								corner_radius_bottom_left = 10
+								content_margin_left = 10
+								content_margin_right = 10
+								content_margin_top = 10
+								content_margin_bottom = 10
+								
+							VBoxContainer GroupContent4 #n_29
+								layout_mode = 2
+								alignment = 1
+								theme_override_constants/separation = 5
+								
+								HBoxContainer BooksRow4 #n_30
+									layout_mode = 2
+									alignment = 1
+									theme_override_constants/separation = 4
+									
+									Panel Book10 #n_31
+										layout_mode = 2
+										size_flags_horizontal = 0
+										custom_minimum_size = Vector2(25.0, 35.0)
+										theme_override_styles/panel StyleBoxFlat #r_book_10
+											bg_color = Color(0.901, 0.494, 0.133, 1.0)
+											corner_radius_top_left = 2
+											corner_radius_top_right = 2
+											corner_radius_bottom_right = 2
+											corner_radius_bottom_left = 2
+											shadow_size = 2
+											shadow_color = Color(0.827, 0.329, 0.0, 1.0)
+											shadow_offset = Vector2(2.0, 2.0)
+											
+									Panel Book11 #n_32
+										layout_mode = 2
+										size_flags_horizontal = 0
+										custom_minimum_size = Vector2(25.0, 35.0)
+										theme_override_styles/panel StyleBoxFlat #r_book_11
+											bg_color = Color(0.901, 0.494, 0.133, 1.0)
+											corner_radius_top_left = 2
+											corner_radius_top_right = 2
+											corner_radius_bottom_right = 2
+											corner_radius_bottom_left = 2
+											shadow_size = 2
+											shadow_color = Color(0.827, 0.329, 0.0, 1.0)
+											shadow_offset = Vector2(2.0, 2.0)
+											
+									Panel Book12 #n_33
+										layout_mode = 2
+										size_flags_horizontal = 0
+										custom_minimum_size = Vector2(25.0, 35.0)
+										theme_override_styles/panel StyleBoxFlat #r_book_12
+											bg_color = Color(0.901, 0.494, 0.133, 1.0)
+											corner_radius_top_left = 2
+											corner_radius_top_right = 2
+											corner_radius_bottom_right = 2
+											corner_radius_bottom_left = 2
+											shadow_size = 2
+											shadow_color = Color(0.827, 0.329, 0.0, 1.0)
+											shadow_offset = Vector2(2.0, 2.0)
+											
+								Label PriceTag4 #n_34
+									layout_mode = 2
+									text = "96 ج"
+									horizontal_alignment = 1
+									theme_override_colors/font_color = Color(1.0, 1.0, 1.0, 1.0)
+									theme_override_font_sizes/font_size = 13
+
+						PanelContainer BookGroup5 #n_35
+							layout_mode = 2
+							size_flags_horizontal = 3
+							size_flags_vertical = 3
+							theme_override_styles/panel StyleBoxFlat #r_group_5
+								bg_color = Color(1.0, 1.0, 1.0, 0.1)
+								corner_radius_top_left = 10
+								corner_radius_top_right = 10
+								corner_radius_bottom_right = 10
+								corner_radius_bottom_left = 10
+								content_margin_left = 10
+								content_margin_right = 10
+								content_margin_top = 10
+								content_margin_bottom = 10
+								
+							VBoxContainer GroupContent5 #n_36
+								layout_mode = 2
+								alignment = 1
+								theme_override_constants/separation = 5
+								
+								HBoxContainer BooksRow5 #n_37
+									layout_mode = 2
+									alignment = 1
+									theme_override_constants/separation = 4
+									
+									Panel Book13 #n_38
+										layout_mode = 2
+										size_flags_horizontal = 0
+										custom_minimum_size = Vector2(25.0, 35.0)
+										theme_override_styles/panel StyleBoxFlat #r_book_13
+											bg_color = Color(0.901, 0.494, 0.133, 1.0)
+											corner_radius_top_left = 2
+											corner_radius_top_right = 2
+											corner_radius_bottom_right = 2
+											corner_radius_bottom_left = 2
+											shadow_size = 2
+											shadow_color = Color(0.827, 0.329, 0.0, 1.0)
+											shadow_offset = Vector2(2.0, 2.0)
+											
+									Panel Book14 #n_39
+										layout_mode = 2
+										size_flags_horizontal = 0
+										custom_minimum_size = Vector2(25.0, 35.0)
+										theme_override_styles/panel StyleBoxFlat #r_book_14
+											bg_color = Color(0.901, 0.494, 0.133, 1.0)
+											corner_radius_top_left = 2
+											corner_radius_top_right = 2
+											corner_radius_bottom_right = 2
+											corner_radius_bottom_left = 2
+											shadow_size = 2
+											shadow_color = Color(0.827, 0.329, 0.0, 1.0)
+											shadow_offset = Vector2(2.0, 2.0)
+											
+									Panel Book15 #n_40
+										layout_mode = 2
+										size_flags_horizontal = 0
+										custom_minimum_size = Vector2(25.0, 35.0)
+										theme_override_styles/panel StyleBoxFlat #r_book_15
+											bg_color = Color(0.901, 0.494, 0.133, 1.0)
+											corner_radius_top_left = 2
+											corner_radius_top_right = 2
+											corner_radius_bottom_right = 2
+											corner_radius_bottom_left = 2
+											shadow_size = 2
+											shadow_color = Color(0.827, 0.329, 0.0, 1.0)
+											shadow_offset = Vector2(2.0, 2.0)
+											
+								Label PriceTag5 #n_41
+									layout_mode = 2
+									text = "96 ج"
+									horizontal_alignment = 1
+									theme_override_colors/font_color = Color(1.0, 1.0, 1.0, 1.0)
+									theme_override_font_sizes/font_size = 13
+
+						PanelContainer BookGroup6 #n_42
+							layout_mode = 2
+							size_flags_horizontal = 3
+							size_flags_vertical = 3
+							theme_override_styles/panel StyleBoxFlat #r_group_6
+								bg_color = Color(1.0, 1.0, 1.0, 0.1)
+								corner_radius_top_left = 10
+								corner_radius_top_right = 10
+								corner_radius_bottom_right = 10
+								corner_radius_bottom_left = 10
+								content_margin_left = 10
+								content_margin_right = 10
+								content_margin_top = 10
+								content_margin_bottom = 10
+								
+							VBoxContainer GroupContent6 #n_43
+								layout_mode = 2
+								alignment = 1
+								theme_override_constants/separation = 5
+								
+								HBoxContainer BooksRow6 #n_44
+									layout_mode = 2
+									alignment = 1
+									theme_override_constants/separation = 4
+									
+									Panel Book16 #n_45
+										layout_mode = 2
+										size_flags_horizontal = 0
+										custom_minimum_size = Vector2(25.0, 35.0)
+										theme_override_styles/panel StyleBoxFlat #r_book_16
+											bg_color = Color(0.901, 0.494, 0.133, 1.0)
+											corner_radius_top_left = 2
+											corner_radius_top_right = 2
+											corner_radius_bottom_right = 2
+											corner_radius_bottom_left = 2
+											shadow_size = 2
+											shadow_color = Color(0.827, 0.329, 0.0, 1.0)
+											shadow_offset = Vector2(2.0, 2.0)
+											
+									Panel Book17 #n_46
+										layout_mode = 2
+										size_flags_horizontal = 0
+										custom_minimum_size = Vector2(25.0, 35.0)
+										theme_override_styles/panel StyleBoxFlat #r_book_17
+											bg_color = Color(0.901, 0.494, 0.133, 1.0)
+											corner_radius_top_left = 2
+											corner_radius_top_right = 2
+											corner_radius_bottom_right = 2
+											corner_radius_bottom_left = 2
+											shadow_size = 2
+											shadow_color = Color(0.827, 0.329, 0.0, 1.0)
+											shadow_offset = Vector2(2.0, 2.0)
+											
+									Panel Book18 #n_47
+										layout_mode = 2
+										size_flags_horizontal = 0
+										custom_minimum_size = Vector2(25.0, 35.0)
+										theme_override_styles/panel StyleBoxFlat #r_book_18
+											bg_color = Color(0.901, 0.494, 0.133, 1.0)
+											corner_radius_top_left = 2
+											corner_radius_top_right = 2
+											corner_radius_bottom_right = 2
+											corner_radius_bottom_left = 2
+											shadow_size = 2
+											shadow_color = Color(0.827, 0.329, 0.0, 1.0)
+											shadow_offset = Vector2(2.0, 2.0)
+											
+								Label PriceTag6 #n_48
+									layout_mode = 2
+									text = "96 ج"
+									horizontal_alignment = 1
+									theme_override_colors/font_color = Color(1.0, 1.0, 1.0, 1.0)
+									theme_override_font_sizes/font_size = 13
+									
+					Label TotalBooks #n_49
+						layout_mode = 2
+						text = "إجمالي القصص: 18 قصة"
+						horizontal_alignment = 1
+						theme_override_colors/font_color = Color(1.0, 1.0, 1.0, 1.0)
+						theme_override_font_sizes/font_size = 24
+
+		PanelContainer TextSide #n_50
+			layout_mode = 2
+			size_flags_horizontal = 3
+			size_flags_stretch_ratio = 55.0
+			theme_override_styles/panel StyleBoxFlat #r_text_bg
+				bg_color = Color(0.956, 0.968, 0.964, 1.0)
+				
+			MarginContainer TextMargins #n_51
+				layout_mode = 1
+				anchors_preset = 15
+				theme_override_constants/margin_left = 40
+				theme_override_constants/margin_right = 40
+				theme_override_constants/margin_top = 35
+				theme_override_constants/margin_bottom = 35
+				
+				VBoxContainer TextContent #n_52
+					layout_mode = 2
+					size_flags_vertical = 3
+					alignment = 1
+					theme_override_constants/separation = 15
+					
+					HBoxContainer BadgeWrapper #n_53
+						layout_mode = 2
+						size_flags_horizontal = 3
+						alignment = 2
+						
+						Label Badge #n_61
+							layout_mode = 2
+							size_flags_horizontal = 0
+							text = "استعد!"
+							horizontal_alignment = 2
+							vertical_alignment = 1
+							theme_override_colors/font_color = Color(1.0, 1.0, 1.0, 1.0)
+							theme_override_font_sizes/font_size = 14
+							theme_override_styles/normal StyleBoxFlat #r_badge
+								bg_color = Color(0.905, 0.298, 0.235, 1.0)
+								corner_radius_top_left = 15
+								corner_radius_top_right = 15
+								corner_radius_bottom_right = 15
+								corner_radius_bottom_left = 15
+								content_margin_left = 16
+								content_margin_right = 16
+								content_margin_top = 6
+								content_margin_bottom = 6
+							
+					Label Title #n_54
+						layout_mode = 2
+						text = "مشكلة من الواقع"
+						horizontal_alignment = 2
+						theme_override_colors/font_color = Color(0.172, 0.243, 0.313, 1.0)
+						theme_override_font_sizes/font_size = 35
+						
+					PanelContainer ProblemTextPanel #n_55
+						layout_mode = 2
+						size_flags_horizontal = 3
+						theme_override_styles/panel StyleBoxFlat #r_prob
+							bg_color = Color(1.0, 1.0, 1.0, 1.0)
+							corner_radius_top_left = 15
+							corner_radius_top_right = 15
+							corner_radius_bottom_right = 15
+							corner_radius_bottom_left = 15
+							border_width_right = 4
+							border_color = Color(0.203, 0.596, 0.858, 1.0)
+							shadow_size = 15
+							shadow_color = Color(0.0, 0.0, 0.0, 0.05)
+							content_margin_left = 20
+							content_margin_right = 20
+							content_margin_top = 20
+							content_margin_bottom = 20
+							
+						VBoxContainer ProblemBlocks #n_56
+							layout_mode = 2
+							size_flags_horizontal = 3
+							theme_override_constants/separation = 15
+							
+							RichTextLabel Block1 #n_57
+								layout_mode = 2
+								size_flags_horizontal = 3
+								size_flags_vertical = 3
+								bbcode_enabled = true
+								fit_content = true
+								text = "[right]ذهب خالد إلى معرض القاهرة الدولى للكتاب لشراء مجموعة من قصص الأطفال التى يحبها أولاده.[/right]"
+								theme_override_colors/default_color = Color(0.266, 0.266, 0.266, 1.0)
+								theme_override_font_sizes/normal_font_size = 19
+								
+							RichTextLabel Block2 #n_58
+								layout_mode = 2
+								size_flags_horizontal = 3
+								size_flags_vertical = 3
+								bbcode_enabled = true
+								fit_content = true
+								text = "[right]تُباع القصص مقابل [font_size=24]96 جنيهًا[/font_size] لكل [font_size=24]ثلاث قصص[/font_size].\nاشترى خالد عدد [font_size=24]18 قصة[/font_size].[/right]"
+								theme_override_colors/default_color = Color(0.266, 0.266, 0.266, 1.0)
+								theme_override_font_sizes/normal_font_size = 19
+								
+							RichTextLabel Block3 #n_59
+								layout_mode = 2
+								size_flags_horizontal = 3
+								size_flags_vertical = 3
+								bbcode_enabled = true
+								fit_content = true
+								text = "[right][font_size=24]فكم جنيهًا دفع خالد؟[/font_size][/right]"
+								theme_override_colors/default_color = Color(0.905, 0.298, 0.235, 1.0)
+								theme_override_font_sizes/normal_font_size = 19
+
+	AnimationPlayer AnimPlayer #n_60
+		animation "intro_anim"
+			length = 2.0
+			loop = false
+			
+			# Badge: slideRight 0.8s ease 0s delay
+			track "MainSplit/TextSide/TextMargins/TextContent/BadgeWrapper:modulate"
+				type = VALUE
+				interp = SINE
+				keyframe 0.000 Color(1.0, 1.0, 1.0, 0.0) transition 1.00
+				keyframe 0.800 Color(1.0, 1.0, 1.0, 1.0) transition 1.00
+				
+			track "MainSplit/TextSide/TextMargins/TextContent/BadgeWrapper:position:x"
+				type = VALUE
+				interp = SINE
+				keyframe 0.000 30.0 transition 1.00
+				keyframe 0.800 0.0 transition 1.00
+
+			# Title: slideRight 0.8s ease 0.2s delay
+			track "MainSplit/TextSide/TextMargins/TextContent/Title:modulate"
+				type = VALUE
+				interp = SINE
+				keyframe 0.000 Color(1.0, 1.0, 1.0, 0.0) transition 1.00
+				keyframe 0.200 Color(1.0, 1.0, 1.0, 0.0) transition 1.00
+				keyframe 1.000 Color(1.0, 1.0, 1.0, 1.0) transition 1.00
+				
+			track "MainSplit/TextSide/TextMargins/TextContent/Title:position:x"
+				type = VALUE
+				interp = SINE
+				keyframe 0.000 30.0 transition 1.00
+				keyframe 0.200 30.0 transition 1.00
+				keyframe 1.000 0.0 transition 1.00
+
+			# ProblemTextPanel: slideRight 0.8s ease 0.4s delay
+			track "MainSplit/TextSide/TextMargins/TextContent/ProblemTextPanel:modulate"
+				type = VALUE
+				interp = SINE
+				keyframe 0.000 Color(1.0, 1.0, 1.0, 0.0) transition 1.00
+				keyframe 0.400 Color(1.0, 1.0, 1.0, 0.0) transition 1.00
+				keyframe 1.200 Color(1.0, 1.0, 1.0, 1.0) transition 1.00
+				
+			track "MainSplit/TextSide/TextMargins/TextContent/ProblemTextPanel:position:x"
+				type = VALUE
+				interp = SINE
+				keyframe 0.000 30.0 transition 1.00
+				keyframe 0.400 30.0 transition 1.00
+				keyframe 1.200 0.0 transition 1.00
+
+			# BooksGrid: fadeIn 1s ease 0.6s delay
+			track "MainSplit/VisualSide/VisualMargins/VisualContent/BooksGrid:modulate"
+				type = VALUE
+				interp = SINE
+				keyframe 0.000 Color(1.0, 1.0, 1.0, 0.0) transition 1.00
+				keyframe 0.600 Color(1.0, 1.0, 1.0, 0.0) transition 1.00
+				keyframe 1.600 Color(1.0, 1.0, 1.0, 1.0) transition 1.00
+
+			# TotalBooks: fadeIn 1s ease 1.0s delay
+			track "MainSplit/VisualSide/VisualMargins/VisualContent/TotalBooks:modulate"
+				type = VALUE
+				interp = SINE
+				keyframe 0.000 Color(1.0, 1.0, 1.0, 0.0) transition 1.00
+				keyframe 1.000 Color(1.0, 1.0, 1.0, 0.0) transition 1.00
+				keyframe 2.000 Color(1.0, 1.0, 1.0, 1.0) transition 1.00

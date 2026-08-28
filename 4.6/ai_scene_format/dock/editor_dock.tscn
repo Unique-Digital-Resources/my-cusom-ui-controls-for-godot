@@ -1,0 +1,65 @@
+[gd_scene load_steps=8 format=3 uid="uid://ai_scene_format_dock"]
+
+[ext_resource type="Script" path="res://addons/ai_scene_format/dock/editor_dock.gd" id="1_dock"]
+[ext_resource type="Script" path="res://addons/ai_scene_format/dock/inspector_bridge.gd" id="2_ib"]
+[ext_resource type="Script" path="res://addons/ai_scene_format/dock/tabs.gd" id="3_tabs"]
+[ext_resource type="Script" path="res://addons/ai_scene_format/dock/code_editor.gd" id="5_ce"]
+[ext_resource type="Script" path="res://addons/ai_scene_format/dock/toolbar.gd" id="6_tb"]
+[ext_resource type="Script" path="res://addons/ai_scene_format/dock/status_bar.gd" id="7_sb"]
+
+[node name="EditorDock" type="Control"]
+custom_minimum_size = Vector2(400, 300)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_dock")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Toolbar" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+script = ExtResource("6_tb")
+
+[node name="VSplitContainer" type="VSplitContainer" parent="VBoxContainer"]
+layout_mode = 3
+size_flags_vertical = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/VSplitContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Tabs" type="VBoxContainer" parent="VBoxContainer/VSplitContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+script = ExtResource("3_tabs")
+
+[node name="CodeEditor" type="CodeEdit" parent="VBoxContainer/VSplitContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("5_ce")
+
+[node name="OutputConsole" type="RichTextLabel" parent="VBoxContainer/VSplitContainer"]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+size_flags_vertical = 3
+bbcode_enabled = true
+scroll_following = true
+selection_enabled = true
+context_menu_enabled = true
+
+[node name="StatusBar" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+script = ExtResource("7_sb")
+
+[node name="InspectorBridge" type="Node" parent="."]
+script = ExtResource("2_ib")
